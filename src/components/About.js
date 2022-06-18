@@ -17,7 +17,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className='w-full bg-white p-[20px] lg:p-[50px]'>
-
+                    
                 </div>
             </div>
         </>

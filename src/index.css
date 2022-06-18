@@ -58,6 +58,8 @@ body{
 
 .service-hover{
     transition: opacity .3s ease-in-out;
+    /* background: rgba(0, 0, 0, 0.557); */
+    /* position: relative; */
 }
 .service-hover:hover{
     opacity: .8;
@@ -73,5 +75,33 @@ body{
     transition: font-size .3s ease-in-out;
 }
 .service-hover:hover svg{
+    font-size: 1.4rem;
+}
+
+.svg-wrapper svg{
+    transform: rotateZ(0);
+}
+.shap {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: #f35d22;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.svg-wrapper:hover .shap {
+    /* stroke-width: 5px; */
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1500;
+}
+.svg-wrapper:hover .service-hover{
+    opacity: .8;
+}
+.svg-wrapper:hover .service-hover div {
+    width: 60px;
+    height: 60px;
+}
+.svg-wrapper:hover .service-hover div svg{
     font-size: 1.4rem;
 }

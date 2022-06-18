@@ -2,7 +2,7 @@ import React, {useState,useEffect} from 'react'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faEnvelope, faLocationArrow, faPhone, faArrowRight, faSearch, faAngleRight, faXmark, faBars } from '@fortawesome/free-solid-svg-icons'
+import {faEnvelope, faPhone, faArrowRight, faSearch, faAngleRight, faXmark, faBars, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import {faFacebookF } from '@fortawesome/free-brands-svg-icons'
 
 const Navbar = () => {
@@ -57,7 +57,7 @@ const Navbar = () => {
                                 <span className='text-white text-[0.8rem] ml-[10px]'>eurlthermopompes@gmail.com</span>
                             </div>
                             <div className='flex items-center mr-[20px] py-[17px]'>
-                                <FontAwesomeIcon icon={faLocationArrow} className="text-[0.8rem] text-[#f35d22]" />
+                                <FontAwesomeIcon icon={faLocationDot} className="text-[0.8rem] text-[#f35d22]" />
                                 <span className='text-white text-[0.8rem] ml-[10px]'>Lotissement 117 lot 91 local 01 Canastel - Oran</span>
                             </div>
                             <div className='flex items-center py-[17px]'>
@@ -69,7 +69,7 @@ const Navbar = () => {
                         </div>
                         <div className='items-center hidden lg:flex'>
                             <span className='text-white hidden xl:block'>Suivez-nous - </span>
-                            <FontAwesomeIcon icon={faFacebookF} className="text-[0.8rem] text-[#f35d22] mx-[10px]" />
+                            <a target='_blank' href='https://www.facebook.com/EURLthermopompeshvac'><FontAwesomeIcon icon={faFacebookF} className="text-[0.8rem] text-[#f35d22] mx-[10px]" /></a>
                             <Link to="/contact" className='text-white flex items-center bg-[#f35d22] py-[15px] px-[30px] ml-[30px] link-hover'>
                                 <span className='font-bold text-[0.95rem]'>Lire la suite</span>
                                 <FontAwesomeIcon icon={faArrowRight} className="text-[0.9rem] ml-[10px]" />
@@ -84,7 +84,7 @@ const Navbar = () => {
                             <img src="/images/logo.png" alt="" />
                         </div>
                         <div className='w-1/3 lg:flex items-center justify-center hidden'>
-                            <div className='mx-[20px] py-[5px] relative hover:text-[#f35d22]' onMouseEnter={() => sethomeBorder('!w-[50px]')} onMouseLeave={() => sethomeBorder('')}>
+                            <div className='mx-[20px] py-[5px] relative hover:text-[#f35d22]' onMouseEnter={() => sethomeBorder('!w-[46.5px]')} onMouseLeave={() => sethomeBorder('')}>
                                 <Link to='/' className='text-[0.9rem] font-bold'>Acceuil</Link>
                                 <div className={`absolute bottom-[0] left-[0] border-b-2 border-[#f35d22] transition-[width] ease-in-out duration-500 w-0 ${homeBorder}`}></div>
                             </div>
@@ -104,13 +104,13 @@ const Navbar = () => {
                                     <Link to="/services/reparation-chaudiere" className="p-[10px] text-black hover:text-white hover:bg-[#f35d22]" onClick={()=>setdropDown('')}>Réparation tous types de chaudière</Link>
                                 </div>
                             </div>
-                            <div className='mx-[20px] py-[20px] relative' onMouseEnter={() => setaboutBorder('!w-[60px]')} onMouseLeave={() => setaboutBorder('')}>
+                            <div className='mx-[20px] py-[20px] relative' onMouseEnter={() => setaboutBorder('!w-[57.7px]')} onMouseLeave={() => setaboutBorder('')}>
                                 <Link to='/about' className='text-[0.9rem] font-bold flex items-center py-[5px] relative hover:text-[#f35d22]'>
                                     A propos
                                     <div className={`absolute bottom-[0] left-[0] border-b-2 border-[#f35d22] transition-[width] ease-in-out duration-500 w-0 ${aboutBorder}`}></div>
                                 </Link>
                             </div>
-                            <div className='mx-[20px] py-[5px] relative hover:text-[#f35d22]' onMouseEnter={() => setcontactBorder('!w-[58px]')} onMouseLeave={() => setcontactBorder('')}>
+                            <div className='mx-[20px] py-[5px] relative hover:text-[#f35d22]' onMouseEnter={() => setcontactBorder('!w-[57.5px]')} onMouseLeave={() => setcontactBorder('')}>
                                 <Link to='/contact' className='text-[0.9rem] font-bold'>Contacts</Link>
                                 <div className={`absolute bottom-[0] left-[0] border-b-2 border-[#f35d22] transition-[width] ease-in-out duration-500 w-0 ${contactBorder}`}></div>
                             </div>

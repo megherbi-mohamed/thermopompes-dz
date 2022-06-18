@@ -25,7 +25,7 @@ const Contact = () => {
                             <h3 className='text-[1rem] text-[#0f2c49] font-bold my-[10px]'>Téléphone:</h3>
                             <p className='text-[#0f2c49]'>0661 20 50 11</p>
                         </div>
-                        <div className='flex flex-col items-center text-center relative after:content-[""] after:absolute after:top-0 after:right-0 after:border after:border-[#f35d22] after:h-[70px]'>
+                        <div className='flex flex-col items-center text-center relative after:content-[""] xl:after:hidden after:absolute after:top-0 after:right-0 after:border after:border-[#f35d22] after:h-[70px]'>
                             <div className='w-[60px] h-[60px] rounded-full bg-[#f35d22] relative mb-[10px]'>
                                 <FontAwesomeIcon icon={faLocationDot} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]  text-white text-[1.5rem]" />
                             </div>

@@ -38,11 +38,16 @@ const Chauffage_centrale = () => {
                 <div className='w-full bg-white p-[20px] lg:p-[50px]'>
                     <div className='2xl:w-full xl:w-[1200px] lg:w-[1000px] w-full mx-auto grid grid-cols-1 lg:grid-cols-3 gap-[20px] lg:gap-[40px]'>
                         {images.map((image,index)=>(
-                            <div key={index} className='w-full relative h-[200px] lg:h-[300px] overflow-hidden cursor-pointer service-hover' onClick={()=>setzoom({image:image.url,display:'!block'})}>
-                                <img className='w-full absolute left-0 top-[50%] translate-y-[-50%]' src={image.url} alt="" />
-                                <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-0  h-0 rounded-full bg-[#000000c7] overflow-hidden'>
-                                    <FontAwesomeIcon icon={faSearch} className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-0 text-white cursor-pointer"/>
+                            <div className="svg-wrapper h-[200px] lg:h-[300px] w-full my-0 mx-auto relative">
+                                <div className='w-full h-full absolute left-0 top-0 bg-[#000] overflow-hidden service-hover'>
+                                    <img className='w-full absolute left-0 top-[50%] translate-y-[-50%]' src={image.url} alt="" />
+                                    <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-0 h-0 rounded-full bg-[#000000c7] overflow-hidden'>
+                                        <FontAwesomeIcon icon={faSearch} className="absolute top-[50%] left-[50%] !translate-x-[-50%] !translate-y-[-50%] text-0 text-white cursor-pointer"/>
+                                    </div>
                                 </div>
+                                <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" onClick={()=>setzoom({image:image.url,display:'!block'})}>
+                                    <rect className="shap" height="100%" width="100%" />
+                                </svg>
                             </div>
                         ))}
                     </div>
